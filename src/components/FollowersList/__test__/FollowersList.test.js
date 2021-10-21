@@ -10,6 +10,10 @@ const MockFollowersList = () => {
 
 describe("FollowersList", () =>{
 
+    beforeEach(()=>{
+        console.log("running before each test")
+    })
+
 it("should render follower item", async() => {
   render(<MockFollowersList/>);
   const followerDivElement = await screen.findByTestId("follower-item-0")
